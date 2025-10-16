@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+
+@import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #000510;
+  --prime-color: #fb9e3a;
+  --prime-light: #fb9e3a8a;
+  --white-color: #fff;
+  --Unbounded: "Unbounded", sans-serif;
+}
+
+.Unbounded {
+  font-family: var(--Unbounded) !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--white-color);
+  overflow-x: hidden;
+}
+
+/* Nav */
+
+.nav-links {
+  position: relative;
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--prime-color);
+  transition: 0.4s;
+}
+
+.nav-links::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--prime-color);
+  transition: 0.4s;
+}
+
+.nav-links:hover::after,
+.nav-links:hover::before {
+  width: 100%;
+}
+
+
+/* Hero */
+
+.hero-image {
+position: relative;
+}
+
+.hero-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000510 0%, #00000000 20%);
+}
+
+
