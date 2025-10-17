@@ -37,7 +37,7 @@ export default function Services() {
             >
               Uicrypto{" "}
               <span className="text-[var(--prime-color)] font-bold">
-                Services
+                Serviços
               </span>
             </motion.h2>
             <motion.h1
@@ -47,7 +47,7 @@ export default function Services() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="text-4xl Unbounded"
             >
-              Expert services to support your crypto journey
+              Serviços especializados para apoiar sua jornada no mundo cripto
             </motion.h1>
             <motion.p
               initial={{ y: -100, opacity: 0 }}
@@ -56,15 +56,39 @@ export default function Services() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="mt-3 text-gray-400"
             >
-              We provide a range of services to help you trade, secure, and
-              manage your assets confidently.
+              Oferecemos uma variedade de serviços para ajudá-lo a negociar,
+              proteger e gerenciar seus ativos com confiança.
             </motion.p>
             <div className="flex flex-col gap-5 mt-10">
-                <motion.div
-                 
-                className="">
-
-                </motion.div>
+              <motion.div
+              initial={{ y: -100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 1.2 }}
+              className="flex items-center gap-5 border-b border-gray-800 pb-5">
+                <Image src={serviceIcon1} alt="service" width={40} height={40} className="invert-[50%]"/>
+                <h3 className="text-2xl text-gray-400">Gerenciamento de portfólio</h3>
+              </motion.div>
+              <motion.div
+              initial={{ y: -100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 1.2 }}
+              className="flex items-center gap-5 border-b border-gray-800 pb-5">
+                <Image src={serviceIcon2} alt="service" width={40} height={40} className="invert-[50%]"/>
+                <h3 className="text-2xl text-gray-400">Segurança e conformidade
+                </h3>
+              </motion.div>
+              <motion.div
+              initial={{ y: -100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 1.2 }}
+              className="flex items-center gap-5 border-b border-gray-800 pb-5">
+                <Image src={serviceIcon3} alt="service" width={40} height={40} className="invert-[50%]"/>
+                <h3 className="text-2xl text-gray-400">Atendimento ao cliente 24/7
+                </h3>
+              </motion.div>
             </div>
           </div>
         </div>

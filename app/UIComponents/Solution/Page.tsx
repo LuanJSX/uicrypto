@@ -13,7 +13,7 @@ import solution4 from "@/public/solution-icon-4.svg";
 export default function Solution() {
   return (
     <>
-      <div className="px-[8%] lg:px-[16%] my-[5%]">
+      <div className="px-[8%] lg:px-[16%] my-[5%]" id="benefits">
         <div className="flex flex-col items-center justify-center text-center gap-10">
           <div className="flex flex-col">
             <motion.h3

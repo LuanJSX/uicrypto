@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Unbounded } from "next/font/google";
 import "./globals.css";
 import { Nav } from "./UIComponents/Components/Nav";
+import Footer from "./UIComponents/Components/Footer";
 
 
 const unbounded = Unbounded({
@@ -37,6 +38,7 @@ export default function RootLayout({
       >
         <Nav/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
