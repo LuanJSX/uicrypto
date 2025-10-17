@@ -76,3 +76,32 @@ position: relative;
 }
 
 
+/* Feature */
+.feature-icon {
+  width: 400px;
+  height: 40px;
+}
+
+
+/* Banner */
+
+.banner {
+  position: relative;
+  z-index: 1;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/banner-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 40%;
+  z-index: -1;
+  opacity: 0.2;
+
+}
